@@ -40,9 +40,9 @@ void loop() {
           Serial.print("\t");         // imprime un espacio de tabulacion             
                     
           if(comparaUID(LecturaUID, Usuario1))    // llama a funcion comparaUID con Usuario1
-            Serial.println("Benvingut, Andreu"); // si retorna verdadero muestra texto bienvenida
+            Serial.println("Bienvenido, User"); // si retorna verdadero muestra texto bienvenida
           else if(comparaUID(LecturaUID, Usuario2)) // llama a funcion comparaUID con Usuario2
-            Serial.println("Benvingut, User"); // si retorna verdadero muestra texto bienvenida
+            Serial.println("Bienvenido, Invitado"); // si retorna verdadero muestra texto bienvenida
            else           // si retorna falso
             Serial.println("Acces denegat!");    // muestra texto equivalente a acceso denegado          
                   
